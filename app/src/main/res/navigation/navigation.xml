@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/utamafragment">
+
+    <fragment
+        android:id="@+id/utamafragment"
+        android:name="com.uaspm1.soundchecker.Utamafragment"
+        android:label="fragment_utama"
+        tools:layout="@layout/fragment_utama" >
+        <action
+            android:id="@+id/action_utamafragment_to_ritmis"
+            app:destination="@id/ritmis"
+            app:popUpTo="@id/ritmis" />
+        <action
+            android:id="@+id/action_utamafragment_to_melodis2"
+            app:destination="@id/melodis2"
+            app:popUpTo="@id/melodis2" />
+        <action
+            android:id="@+id/action_utamafragment_to_harmonis2"
+            app:destination="@id/harmonis" />
+    </fragment>
+    <fragment
+        android:id="@+id/ritmis"
+        android:name="com.uaspm1.soundchecker.Ritmis"
+        android:label="fragment_ritmis"
+        tools:layout="@layout/fragment_ritmis" >
+        <action
+            android:id="@+id/action_ritmis_to_utamafragment"
+            app:destination="@id/utamafragment"
+            app:popUpTo="@id/utamafragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/melodis2"
+        android:name="com.uaspm1.soundchecker.Melodis"
+        android:label="Melodis"
+        tools:layout="@layout/fragment_melodis" >
+        <action
+            android:id="@+id/action_melodis2_to_utamafragment"
+            app:destination="@id/utamafragment"
+            app:popUpTo="@id/utamafragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/harmonis"
+        android:name="com.uaspm1.soundchecker.harmonis"
+        android:label="fragment_harmonis"
+        tools:layout="@layout/fragment_harmonis" />
+</navigation>
