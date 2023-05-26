@@ -1,8 +1,10 @@
-package com.uaspm1.soundchecker
+package com.uaspm1.soundchecker.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.uaspm1.soundchecker.R
+import com.uaspm1.soundchecker.fragment.Utamafragment
 import com.uaspm1.soundchecker.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

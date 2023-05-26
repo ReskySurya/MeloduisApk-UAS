@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/utamafragment"
-        android:name="com.uaspm1.soundchecker.Utamafragment"
+        android:name="com.uaspm1.soundchecker.fragment.Utamafragment"
         android:label="fragment_utama"
         tools:layout="@layout/fragment_utama" >
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/ritmis"
-        android:name="com.uaspm1.soundchecker.Ritmis"
+        android:name="com.uaspm1.soundchecker.fragment.RitmisFragment"
         android:label="fragment_ritmis"
         tools:layout="@layout/fragment_ritmis" >
         <action
@@ -35,7 +35,7 @@
 
     <fragment
         android:id="@+id/melodis2"
-        android:name="com.uaspm1.soundchecker.Melodis"
+        android:name="com.uaspm1.soundchecker.fragment.MelodisFragment"
         android:label="Melodis"
         tools:layout="@layout/fragment_melodis" >
         <action
@@ -45,7 +45,7 @@
     </fragment>
     <fragment
         android:id="@+id/harmonis"
-        android:name="com.uaspm1.soundchecker.harmonis"
+        android:name="com.uaspm1.soundchecker.fragment.HarmonisFragment"
         android:label="fragment_harmonis"
         tools:layout="@layout/fragment_harmonis" />
 </navigation>
